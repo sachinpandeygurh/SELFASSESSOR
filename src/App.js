@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import MyContext from './MyContext';
+import Sections from './Components/sections';
+import Sidebar from './Components/sidebar';
+import Main from './Components/Main';
+import DetailsCollection from './Components/Forms/DetailsCollection';
+import DocumentCollection from './Components/Forms/DocumentCollection';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+  
+          <Sections/>
+         <div className='row'>
+         <Sidebar/>
+         
+        <Routes>
+          <Route path="/" element={<DetailsCollection/>} />
+          <Route path="/doc" element={<DocumentCollection/>} />
+        </Routes>
+         </div>
+     
+    </BrowserRouter>
   );
-}
-
+};
 export default App;
