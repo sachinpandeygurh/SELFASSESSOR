@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import box from '../../Image/box.svg';
 
 // Button component
@@ -58,15 +58,15 @@ export const SectionType = ({ check = false, title }) => {
 
 
 // Card component
-export const CardSide = ({  title , para }) => {
+export const CardSide = ({  title , para , to="/" }) => {
   return (
-    <div className={`d-flex border p-2 m-1 rounded`}>
+    <Link className={`d-flex border p-2 m-1 rounded text-decoration-none text-dark`} to={to}>
       <img className="card-img-top  " src={box} alt="Card cap" style={{width : "4rem"}}/>
       <div className="card-body d-flex mx-3 flex-column justify-content-center">
         <h6 className="card-title">{title}</h6>
         <p className="card-text" style={{fontSize:"12px"}}>{para} </p>
       </div>
-    </div>
+    </Link>
   );
 };
 

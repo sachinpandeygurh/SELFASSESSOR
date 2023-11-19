@@ -10,6 +10,14 @@ const DocumentCollection = () => {
           <Frmtitle title="Details Collection"/>
       <form className='m-auto mt-3' style={{width: "22rem"}}>
         <Input label="1. 10th Marksheet *" type='file' title="Attach file upto 5kb" />
+        <Input label="2. 11th Marksheet *" type='file' title="Attach file upto 5kb" />
+        <Input label="3. Graduation Marksheet *" type='file' title="Attach file upto 5kb" />
+        <Input label="4. Post Graduation Marksheet " type='file' title="Attach file upto 5kb" />
+        <Input label="5. Offer Latter" type='file' title="Attach file upto 5kb" />
+        <Input label="6. Salary Slips*" type='file' title="Attach file upto 5kb" />
+        <Input label="7. Bank Statement" type='file' title="Attach file upto 5kb" />
+        <Input label="8. Increment Latter" type='file' title="Attach file upto 5kb" />
+        <Input label="9. Others (if any)" type='file' title="Attach file upto 5kb" />
         
       </form>
     </div>

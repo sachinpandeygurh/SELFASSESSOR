@@ -8,8 +8,8 @@ const Sidebar = () => {
      <CardSide title="New Form" para="Start creating a new form with the wide options of fields available"/>
      <p className='mt-4'>Explore the following Templates:</p>
      <CardSide title="Details Collection" para="Collect information from Candidates on their education, work experience, contact no,etc"/>
-     <CardSide title="Document Collection" para="Save time and efforts: Explore this template to find a set of questions required for document collection "/>
-     <CardSide title="Statement of Purpose" para="Start creating a new form with the wide options of fields available "/>
+     <CardSide to='/doc' title="Document Collection" para="Save time and efforts: Explore this template to find a set of questions required for document collection "/>
+     <CardSide to='/statement' title="Statement of Purpose" para="Start creating a new form with the wide options of fields available "/>
      <CardSide title="Interview Availability " para="Start creating a new form with the wide options of fields available"/>
     </ul>
   </div>

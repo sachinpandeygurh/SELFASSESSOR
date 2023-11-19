@@ -7,6 +7,7 @@ import Sidebar from './Components/sidebar';
 import Main from './Components/Main';
 import DetailsCollection from './Components/Forms/DetailsCollection';
 import DocumentCollection from './Components/Forms/DocumentCollection';
+import StatementPurpose from './Components/Forms/statementPurpose';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<DetailsCollection/>} />
           <Route path="/doc" element={<DocumentCollection/>} />
+          <Route path="/statement" element={<StatementPurpose/>} />
         </Routes>
          </div>
      
