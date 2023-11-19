@@ -9,11 +9,10 @@ const StatementPurpose = () => {
     <div className="  d-flex flex-column justify-content-center pb-4 bg-white rounded">
           <Frmtitle title="Details Collection"/>
       <form className='m-auto mt-3' style={{width: "22rem"}}>
-        <Input type='text-field' label="1. Name *" title="Enter a Valid Salary in numbers e.g 50,000/-" />
+        
+        <label htmlFor="inputName" className="form-label">1. Tell me about a time you were asked to do something you had never done before. How did you react? What did you learn?</label>
         <textarea name="postContent" style={{width:"20em"}}></textarea>
-        <Input label="2. Email*" title="Example - userid@gmail.com" />
-        <Input label="3. Date of Birth" type="date" title="" />
-        <Input label="4. Contact no " title="Enter your 10 digit contact no" />
+     
         
       </form>
     </div>
