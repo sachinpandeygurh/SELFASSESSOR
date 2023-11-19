@@ -8,6 +8,7 @@ import Main from './Components/Main';
 import DetailsCollection from './Components/Forms/DetailsCollection';
 import DocumentCollection from './Components/Forms/DocumentCollection';
 import StatementPurpose from './Components/Forms/statementPurpose';
+import Interviewavl from './Components/Forms/Interviewavl';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/" element={<DetailsCollection/>} />
           <Route path="/doc" element={<DocumentCollection/>} />
           <Route path="/statement" element={<StatementPurpose/>} />
+          <Route path="/interviewavl" element={<Interviewavl/>} />
         </Routes>
          </div>
      
