@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+/* @media (min-width: 768px) and (max-width: 1500px) {
+  .position-md-fixed{
+    position: fixed !important;
+  }
+ 
+} */
