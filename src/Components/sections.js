@@ -4,7 +4,7 @@ import {HLine, SectionType } from './Utils/Tools'
 const Sections = () => {
   return (
     
-<nav class="navbar mt-3 navbar-light bg-light shadow">
+<nav class="navbar pt-3 navbar-light bg-light shadow">
   <div className='container d-flex'>
 <SectionType title="form section" check={true}/>
 <HLine/>

@@ -9,6 +9,7 @@ import DetailsCollection from './Components/Forms/DetailsCollection';
 import DocumentCollection from './Components/Forms/DocumentCollection';
 import StatementPurpose from './Components/Forms/statementPurpose';
 import Interviewavl from './Components/Forms/Interviewavl';
+import Action from './Components/Forms/Action';
 
 const App = () => {
   return (
@@ -25,7 +26,7 @@ const App = () => {
           <Route path="/interviewavl" element={<Interviewavl/>} />
         </Routes>
          </div>
-     
+     <Action/>
     </BrowserRouter>
   );
 };

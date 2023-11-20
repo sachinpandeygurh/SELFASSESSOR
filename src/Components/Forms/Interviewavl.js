@@ -23,10 +23,10 @@ const Interviewavl = () => {
           text: 'Interview Medium',
         },
       ];
-    useEffect(
-        statements,
-        []
-    )
+    // useEffect(
+    //     statements,
+    //     []
+    // )
     
       return (
         <div className="m-auto" style={{ width: '800px', height: '100vh' }}>
