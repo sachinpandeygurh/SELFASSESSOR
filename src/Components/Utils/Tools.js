@@ -82,7 +82,7 @@ export const Frmtitle = ({title }) => {
     <div className='card-body d-flex p-2 px-4 flex-column justify-content-center' style={{backgroundColor: "#1A8FE626"}}>
     <h5>{title}</h5>
 <p style={{fontWeight: "12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-<br/>
+
 <p style={{fontWeight: "12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
     </div> );
 };

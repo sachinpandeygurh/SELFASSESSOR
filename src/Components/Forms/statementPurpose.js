@@ -29,7 +29,7 @@ const StatementPurpose = () => {
     <div className="m-auto" style={{ width: '800px', height: '100vh' }}>
       <Main />
       <div className=" d-flex flex-column justify-content-center pb-4 bg-white rounded">
-        <Frmtitle title="Details Collection" />
+        <Frmtitle title="Statements of Purpose" />
         <form className="m-auto mt-3" style={{ width: '39rem' }}>
           {statements.map((statement, index) => (
             <div key={index}>
