@@ -3,20 +3,20 @@ import { Link } from 'react-router-dom';
 import box from '../../Image/box.svg';
 
 // Button component
-export const Btn = ({ type, title }) => {
+export const Btn = ({ type, title , className}) => {
   return (
-    <button className={`btn ${type}`} type={type}>
+    <button className={`btn ${className}`} type={type}>
       {title}
     </button>
   );
 };
 
 // Input component
-export const Input = ({ label, type = 'text', title }) => {
+export const Input = ({required, label, type = 'text', title }) => {
   return (
     <div className="mb-3">
       <label htmlFor="inputName" className="form-label">{label}</label>
-      <input
+      <input required={required}
         type={type}
         className="form-control"
         id="inputName"
@@ -46,7 +46,7 @@ export const SectionType = ({ check = false, title }) => {
     <div className={`d-flex mx-1 flex-row justify-content-center`}>
       <input
         style={inputBox()}
-        className={`input-box  rounded-pill ${check ? 'checked' : ''}`} // Add check condition to class name
+        className={`input-box  rounded-pill ${check ? 'checked' : ''}`}
         type="checkbox"
         defaultChecked={check}
       />
