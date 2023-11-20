@@ -3,7 +3,8 @@ import { CardSide } from './Utils/Tools';
 
 const Sidebar = () => {
   return (
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-dark bg-white pt-3 h-100 " style={{width: "400px" , height:"100vh"}}>
+    <div className=' py-3  bg-white position-relative'style={{width: "400px" , height:"100vh"}}>
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-dark bg-white pt-3 h-100 " >
     <ul class="nav nav-pills flex-column mb-auto">
      <CardSide title="New Form" para="Start creating a new form with the wide options of fields available"/>
      <p className='mt-4'>Explore the following Templates:</p>
@@ -12,6 +13,7 @@ const Sidebar = () => {
      <CardSide to='/statement' title="Statement of Purpose" para="Start creating a new form with the wide options of fields available "/>
      <CardSide to='/interviewavl' title="Interview Availability " para="Start creating a new form with the wide options of fields available"/>
     </ul>
+  </div>
   </div>
   );
 };
